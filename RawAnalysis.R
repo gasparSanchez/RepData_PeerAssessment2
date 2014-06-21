@@ -1,0 +1,6 @@
+stormData <- read.csv("/Users/gaspar/Dropbox/Cursos/Coursera/ReproducibleResearch/Assessment2/repdata-data-StormData.csv.bz2", header=TRUE, fill=TRUE, na.strings="NA")
+head(stormData)
+table(stormData$EVTYPE)
+table(stormData$FATALITIES)
+table(stormData$INJURIES)
+plot(stormData$FATALITIES~stormData$INJURIES)
